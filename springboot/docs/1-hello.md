@@ -104,3 +104,5 @@ Avec ce projet d'introduction, vous avez pu découvrir que :
 - Cette configuration se fait dans les classes java à l'aide d'annotations (dont beaucoup restent à découvrir)
 - SpringBoot fournit une encapsulation forte de serveur d'application (avec une configuration par défaut)
 - SpringBoot c'est cool
+
+#### [retour](../README.md)
