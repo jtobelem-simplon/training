@@ -2,7 +2,13 @@
 
 Une application web peut-être découpée en 2 parties : front, qui représente l'interface utilisateur qui va être visualisée sur un navigateur chez le client et back, qui représente le cœur de l'application avec une partie base de donnée et l'utilisation d'un langage objet.
 
-## 1. Front
+Les images qui suivent viennent de ce repo : [https://github.com/kamranahmedse/developer-roadmap.git]
+
+![img](images/intro.png)
+
+## 1. Frontend
+
+![img](images/frontend.png)
 
 ### [Maquetter son application](front/mockup/README.md)
 
@@ -17,7 +23,9 @@ La base.
 Un framework pour le front qui utilise type script, une sur couche de js.
 
 
-## 2. Back
+## 2. Backend
+
+![img](images/backend.png)
 
 ### [Langage java](../java/README.md)
 

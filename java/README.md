@@ -3,15 +3,15 @@
 
 ## 1. Le langage Java
 
-###  [Bases](langage/base/README.md)
+### [Bases](langage/base/README.md)
 
 Les bases de la programmation objet (variables, conditions, boucles, fonctions) avec la syntaxe java.
 
-###  [Exceptions](langage/exceptions/README.md)
+### [Exceptions](langage/exceptions/README.md)
 
 Un mécanisme pour gérer les erreurs.
 
-###  [Junit](langage/junit/README.md)
+### [Junit](langage/junit/README.md)
 
 Les tests unitaire en java avec junit, et la notion de test driven developpement (TDD).
 
