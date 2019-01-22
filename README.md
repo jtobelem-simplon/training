@@ -1,38 +1,36 @@
-# Training
-
-<br>
 # Base de donnée
 
 MCD/MLD, SQL, procédures stockées, triggers
 
-<br>
 # Réaliser un projet java
 
-## Programmation java
+## 1. Programmation java
 
 bases, exceptions, junit, polymorphisme
 
-## IDE
+## 2. Related tools
+
+### Eclipse
 
 Pour écrire du code plus vite, le modifier, le débugger, ... bref gagner en productivité
 
-## Gradle
+### Gradle/Maven
 
 Configurer un projet (gestion des dépendances, déploiement, tests)
 
-## Git, github, eclipse
+### Git, github
 
 Pour collaborer sur des projets, partager du code.
 
-<br>
-# Frameworks
 
-Les frameworks = "cadre de travail" permettent de donner une structure pour des projets qui rencontrent les mêmes problématiques, par exemple des application web, ou bien des application qui ont besoin d'ajouter une couche de persistence (base de donnée) sur une application.
+## 3. Related Frameworks
 
-## Hibernate
+Les frameworks = "cadre de travail" permettent de donner une structure pour des projets qui rencontrent les mêmes problématiques, par exemple des application web, ou bien des application qui ont besoin d'ajouter une couche de persistance (base de donnée) sur une application.
 
-[Hibernate](hibernate/README.md)
+### [Hibernate](java/frameworks/hibernate/README.md)
 
-## Springboot
+Pour gérer la persistance en base de données (entity, mapping, repository).
 
-[Springboot](springboot/README.md)
+### [Springboot](java/frameworks/springboot/README.md)
+
+Pour faciliter l'utilisation d'autres frameworks (comme hibernate), déployer automatiquement un serveur d'application, ...

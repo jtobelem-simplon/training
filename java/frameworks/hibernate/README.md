@@ -75,4 +75,4 @@ class Artiste {
 [Des exos](td.md)   
 
 
-#### [retour](../README.md)
+#### [retour](/README.md)
