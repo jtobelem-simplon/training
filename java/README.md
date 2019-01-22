@@ -15,7 +15,7 @@ Un mécanisme pour gérer les erreurs.
 
 Les tests unitaire en java avec junit, et la notion de test driven developpement (TDD).
 
-### [Bases](langage/polymorphisme/README.md)
+### [Polymorphisme](langage/polymorphisme/README.md)
 
 L'héritage, les interfaces et classes abstraites : bref le polymorphisme. Et quelques design paterns associés.
 
