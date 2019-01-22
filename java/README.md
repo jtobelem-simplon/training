@@ -3,23 +3,37 @@
 
 ## 1. Le langage Java
 
-[Bases, exceptions, junit, polymorphisme](java/language/README.md)
+### [Bases](langage/base/README.md)
+
+Les bases de la programmation objet (variables, conditions, boucles, fonctions) avec la syntaxe java.
+
+### [Exceptions](langage/exceptions/README.md)
+
+Un mécanisme pour gérer les erreurs.
+
+### [Junit](langage/junit/README.md)
+
+Les tests unitaire en java avec junit, et la notion de test driven developpement (TDD).
+
+### [Bases](langage/polymorphisme/README.md)
+
+L'héritage, les interfaces et classes abstraites : bref le polymorphisme. Et quelques design paterns associés.
 
 ## 2. Outils associés
 
-### [Eclipse](java/tools/eclipse/README.md)
+### [Eclipse](tools/eclipse/README.md)
 
 Pour écrire du code plus vite, le modifier, le débugger, ... bref gagner en productivité
 
-### [Gradle/Maven](java/tools/gradle/README.md)
+### [Gradle/Maven](tools/gradle/README.md)
 
 Configurer un projet (gestion des dépendances, déploiement, tests)
 
-### [Git, github](java/tools/git/README.md)
+### [Git, github](tools/git/README.md)
 
 Pour collaborer sur des projets, partager du code.
 
-### [UML](java/tools/uml/README.md)
+### [UML](tools/uml/README.md)
 
 Pour concevoir des diagrammes de classes.
 
