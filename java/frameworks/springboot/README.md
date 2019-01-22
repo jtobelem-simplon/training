@@ -44,4 +44,4 @@ Trois applications à reproduire et une à faire entièrement :
 
 
 
-#### [retour](https://jtobelem-simplon.github.io/training/README.md)
+#### [retour](../README.md)

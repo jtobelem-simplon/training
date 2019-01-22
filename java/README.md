@@ -1,0 +1,39 @@
+# Programmation Java
+
+
+## 1. Le langage Java
+
+[Bases, exceptions, junit, polymorphisme](java/language/README.md)
+
+## 2. Outils associés
+
+### [Eclipse](java/tools/eclipse/README.md)
+
+Pour écrire du code plus vite, le modifier, le débugger, ... bref gagner en productivité
+
+### [Gradle/Maven](java/tools/gradle/README.md)
+
+Configurer un projet (gestion des dépendances, déploiement, tests)
+
+### [Git, github](java/tools/git/README.md)
+
+Pour collaborer sur des projets, partager du code.
+
+### [UML](java/tools/uml/README.md)
+
+Pour concevoir des diagrammes de classes.
+
+
+## 3. Frameworks associés
+
+Les frameworks = "cadre de travail" permettent de donner une structure pour des projets qui rencontrent les mêmes problématiques, par exemple des application web, ou bien des application qui ont besoin d'ajouter une couche de persistance (base de donnée).
+
+### [Hibernate](java/frameworks/hibernate/README.md)
+
+Pour gérer la persistance en base de données (entity, mapping, repository).
+
+### [Springboot](java/frameworks/springboot/README.md)
+
+Pour faciliter l'utilisation d'autres frameworks (comme hibernate), déployer automatiquement un serveur d'application, ...
+
+#### [retour](../README.md)
