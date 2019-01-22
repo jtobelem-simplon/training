@@ -75,4 +75,4 @@ class Artiste {
 [Des exos](td.md)   
 
 
-#### [retour](/README.md)
+#### [retour](https://jtobelem-simplon.github.io/training/README.md)
