@@ -1,0 +1,292 @@
+{
+  "nhits": 395,
+  "parameters": {
+    "dataset": [
+      "sanisettesparis2011"
+    ],
+    "timezone": "UTC",
+    "rows": 10,
+    "format": "json"
+  },
+  "records": [
+    {
+      "datasetid": "sanisettesparis2011",
+      "recordid": "048da46d1f774741acfabf4698a3f621e4e5f80d",
+      "fields": {
+        "objectid": 13,
+        "source": "http://opendata.paris.fr",
+        "arrondissement": "02",
+        "nom_voie": "BOULEVARD DE SEBASTOPOL",
+        "gestionnaire": "Toilette publique de la Ville de Paris",
+        "geom_x_y": [
+          48.8668198774,
+          2.35272664515
+        ],
+        "y": 129596.561431,
+        "x": 601188.661476,
+        "numero_voie": "109",
+        "identifiant": "2/106",
+        "horaires_ouverture": "6 h - 22 h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.35272664515,
+          48.8668198774
+        ]
+      },
+      "record_timestamp": "2018-11-04T05:12:15+00:00"
+    },
+    {
+      "datasetid": "sanisettesparis2011",
+      "recordid": "7565b945028810f4a28ebcffee6d6376112a4b74",
+      "fields": {
+        "objectid": 61,
+        "source": "http://opendata.paris.fr",
+        "arrondissement": "06",
+        "nom_voie": "BOULEVARD SAINT GERMAIN",
+        "gestionnaire": "Toilette publique de la Ville de Paris",
+        "geom_x_y": [
+          48.8544281281,
+          2.33099520431
+        ],
+        "y": 128218.475657,
+        "x": 599594.287804,
+        "numero_voie": "186",
+        "identifiant": "6/146",
+        "horaires_ouverture": "24 h / 24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.33099520431,
+          48.8544281281
+        ]
+      },
+      "record_timestamp": "2018-11-04T05:12:15+00:00"
+    },
+    {
+      "datasetid": "sanisettesparis2011",
+      "recordid": "ae56e37f0505e5cf429960bdbfe6fd7c7e6d309e",
+      "fields": {
+        "objectid": 42,
+        "source": "http://opendata.paris.fr",
+        "arrondissement": "04",
+        "nom_voie": "RUE SAINT MARTIN",
+        "gestionnaire": "Toilette publique de la Ville de Paris",
+        "geom_x_y": [
+          48.8607904234,
+          2.35131574473
+        ],
+        "y": 128926.060506,
+        "x": 601085.282148,
+        "numero_voie": "123",
+        "identifiant": "4/130",
+        "horaires_ouverture": "24 h / 24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.35131574473,
+          48.8607904234
+        ]
+      },
+      "record_timestamp": "2018-11-04T05:12:15+00:00"
+    },
+    {
+      "datasetid": "sanisettesparis2011",
+      "recordid": "b971f8cbe687b7e10e6195417f1ac0cc04ca2983",
+      "fields": {
+        "objectid": 65,
+        "geom_x_y": [
+          48.8551043871,
+          2.29589590523
+        ],
+        "arrondissement": "07",
+        "nom_voie": "AVENUE CHARLES FLOQUET",
+        "gestionnaire": "Toilette publique de la Ville de Paris",
+        "source": "http://opendata.paris.fr",
+        "y": 128294.464,
+        "x": 597018.73,
+        "identifiant": "7/124",
+        "horaires_ouverture": "24 h / 24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.29589590523,
+          48.8551043871
+        ]
+      },
+      "record_timestamp": "2018-11-04T05:12:15+00:00"
+    },
+    {
+      "datasetid": "sanisettesparis2011",
+      "recordid": "fa99ec466333538230883fc0e45562a55eecedb8",
+      "fields": {
+        "objectid": 201,
+        "source": "http://opendata.paris.fr",
+        "arrondissement": "14",
+        "nom_voie": "RUE DE L ABBE SOULANGE BODIN",
+        "gestionnaire": "Toilette publique de la Ville de Paris",
+        "geom_x_y": [
+          48.8354861014,
+          2.31779797752
+        ],
+        "y": 126112.263413,
+        "x": 598625.334013,
+        "numero_voie": "opposé au 3",
+        "identifiant": "14/104",
+        "horaires_ouverture": "6 h - 22 h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.31779797752,
+          48.8354861014
+        ]
+      },
+      "record_timestamp": "2018-11-04T05:12:15+00:00"
+    },
+    {
+      "datasetid": "sanisettesparis2011",
+      "recordid": "b3b833de033bdb6ec1352d1dcd26bb87220e4e3a",
+      "fields": {
+        "objectid": 309,
+        "source": "http://opendata.paris.fr",
+        "arrondissement": "18",
+        "nom_voie": "RUE DE L EVANGILE",
+        "gestionnaire": "Toilette publique de la Ville de Paris",
+        "geom_x_y": [
+          48.8920795027,
+          2.36154810531
+        ],
+        "y": 132405.626891,
+        "x": 601834.907908,
+        "numero_voie": "opposé au 10",
+        "identifiant": "18/112",
+        "horaires_ouverture": "6 h - 22 h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.36154810531,
+          48.8920795027
+        ]
+      },
+      "record_timestamp": "2018-11-04T05:12:15+00:00"
+    },
+    {
+      "datasetid": "sanisettesparis2011",
+      "recordid": "6cde286a53ccbb590702d4f5db8c13b4629ef671",
+      "fields": {
+        "objectid": 344,
+        "source": "http://opendata.paris.fr",
+        "arrondissement": "19",
+        "nom_voie": "AVENUE MATHURIN MOREAU",
+        "gestionnaire": "Toilette publique de la Ville de Paris",
+        "geom_x_y": [
+          48.8784476343,
+          2.37394970898
+        ],
+        "y": 130890.131526,
+        "x": 602744.996148,
+        "numero_voie": "29",
+        "identifiant": "19/107",
+        "horaires_ouverture": "6 h - 22 h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.37394970898,
+          48.8784476343
+        ]
+      },
+      "record_timestamp": "2018-11-04T05:12:15+00:00"
+    },
+    {
+      "datasetid": "sanisettesparis2011",
+      "recordid": "edd7d756abb65566681a628a069912f68bf348bc",
+      "fields": {
+        "objectid": 385,
+        "source": "http://opendata.paris.fr",
+        "arrondissement": "20",
+        "nom_voie": "PLACE MARTIN NADAUD",
+        "gestionnaire": "Toilette publique de la Ville de Paris",
+        "geom_x_y": [
+          48.8649497422,
+          2.39471760215
+        ],
+        "y": 129390.124661,
+        "x": 604269.364671,
+        "numero_voie": "face 4",
+        "identifiant": "20/121",
+        "horaires_ouverture": "24 h / 24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.39471760215,
+          48.8649497422
+        ]
+      },
+      "record_timestamp": "2018-11-04T05:12:15+00:00"
+    },
+    {
+      "datasetid": "sanisettesparis2011",
+      "recordid": "bba932163a89e91b0869ed7e2c37261be3e7ad83",
+      "fields": {
+        "objectid": 200,
+        "source": "http://opendata.paris.fr",
+        "arrondissement": "14",
+        "nom_voie": "AVENUE DU MAINE",
+        "gestionnaire": "Toilette publique de la Ville de Paris",
+        "geom_x_y": [
+          48.8381106104,
+          2.32233836209
+        ],
+        "y": 126404.038189,
+        "x": 598958.692725,
+        "numero_voie": "88",
+        "identifiant": "14/103",
+        "horaires_ouverture": "6 h - 1 h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.32233836209,
+          48.8381106104
+        ]
+      },
+      "record_timestamp": "2018-11-04T05:12:15+00:00"
+    },
+    {
+      "datasetid": "sanisettesparis2011",
+      "recordid": "009f1ef67b0ad5540d65f7fb7b88fa882e39998f",
+      "fields": {
+        "objectid": 39,
+        "source": "http://opendata.paris.fr",
+        "arrondissement": "04",
+        "nom_voie": "RUE SAINT MARTIN",
+        "gestionnaire": "Toilette publique de la Ville de Paris",
+        "geom_x_y": [
+          48.8582009701,
+          2.3497975967
+        ],
+        "y": 128638.090535,
+        "x": 600973.942933,
+        "numero_voie": "14",
+        "identifiant": "4/120",
+        "horaires_ouverture": "24 h / 24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.3497975967,
+          48.8582009701
+        ]
+      },
+      "record_timestamp": "2018-11-04T05:12:15+00:00"
+    }
+  ]
+}

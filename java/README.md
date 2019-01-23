@@ -23,6 +23,10 @@ Un mécanisme pour gérer les erreurs.
 
 L'héritage, les interfaces et classes abstraites : bref le polymorphisme. Et quelques design paterns associés.
 
+###  [Applications](langage/api-rest/README.md)
+
+Par exemple accéder à une api rest depuis un programme java (comme les api de google, openweather, ...).
+
 
 ## 2. Outils associés
 

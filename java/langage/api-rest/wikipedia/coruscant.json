@@ -1,0 +1,104 @@
+{
+  "batchcomplete": "",
+  "continue": {
+    "sroffset": 10,
+    "continue": "-||"
+  },
+  "query": {
+    "searchinfo": {
+      "totalhits": 312
+    },
+    "search": [
+      {
+        "ns": 0,
+        "title": "Coruscant",
+        "pageid": 90121,
+        "size": 18515,
+        "wordcount": 2025,
+        "snippet": "<span class=\"searchmatch\">Coruscant</span> est une planète de l'univers de fiction Star Wars. Capitale de la République puis de l'Empire, siège du gouvernement et foyer des Jedi, Coruscant",
+        "timestamp": "2018-07-17T20:04:04Z"
+      },
+      {
+        "ns": 0,
+        "title": "Chronologie de la saga Star Wars",
+        "pageid": 560436,
+        "size": 32553,
+        "wordcount": 2666,
+        "snippet": "Avec l'aide des Jedi, la reine Amidala force le blocus pour aller sur <span class=\"searchmatch\">Coruscant</span> informer le Sénat des événements. C'est là que, frustrée par les atermoiements",
+        "timestamp": "2018-09-07T11:57:30Z"
+      },
+      {
+        "ns": 0,
+        "title": "Star Wars, épisode III : La Revanche des Sith",
+        "pageid": 192163,
+        "size": 90468,
+        "wordcount": 9719,
+        "snippet": "forces séparatistes frappent un grand coup, attaquant la planète capitale <span class=\"searchmatch\">Coruscant</span> et s’emparent de Palpatine, le Chancelier suprême de la République. Les",
+        "timestamp": "2018-09-22T13:38:17Z"
+      },
+      {
+        "ns": 0,
+        "title": "Qui-Gon Jinn",
+        "pageid": 262984,
+        "size": 8120,
+        "wordcount": 916,
+        "snippet": "Gungans, ils décident par la suite de partir au Sénat galactique sur <span class=\"searchmatch\">Coruscant</span> afin de mettre un terme à l'invasion. Durant leur fuite, leur vaisseau",
+        "timestamp": "2018-05-04T12:13:31Z"
+      },
+      {
+        "ns": 0,
+        "title": "Star Wars Jedi Knight: Jedi Academy",
+        "pageid": 4576726,
+        "size": 22707,
+        "wordcount": 3131,
+        "snippet": "entreprise connue n'en fabrique. Un criminel dénommé Lannik Racto, basé sur <span class=\"searchmatch\">Coruscant</span>, est suspecté par le SIS d'être responsable de l'arrivée de ces droïdes",
+        "timestamp": "2018-09-05T09:52:03Z"
+      },
+      {
+        "ns": 0,
+        "title": "Padmé Amidala",
+        "pageid": 286553,
+        "size": 16339,
+        "wordcount": 2020,
+        "snippet": "avec les Jedis Qui-Gon Jinn et Obi-Wan Kenobi, et tente de rejoindre <span class=\"searchmatch\">Coruscant</span> pour plaider la cause de son peuple au Sénat. Lors d'une halte imprévue",
+        "timestamp": "2018-09-29T10:05:32Z"
+      },
+      {
+        "ns": 0,
+        "title": "Épisodes de Lego Star Wars : Les Chroniques de Yoda",
+        "pageid": 8609516,
+        "size": 14646,
+        "wordcount": 1315,
+        "snippet": "Autre(s) titre(s) francophones Raid sur <span class=\"searchmatch\">Coruscant</span> Titre original Raid on <span class=\"searchmatch\">Coruscant</span> (trad. litt. : « Raid sur <span class=\"searchmatch\">Coruscant</span> ») Numéro de production 6 (2-03) Première",
+        "timestamp": "2018-04-11T10:18:38Z"
+      },
+      {
+        "ns": 0,
+        "title": "Lego Star Wars : Les Contes des Droïdes",
+        "pageid": 9022007,
+        "size": 18879,
+        "wordcount": 1544,
+        "snippet": "Endor) : La Menace fantôme et L'Attaque des clones Crise sur <span class=\"searchmatch\">Coruscant</span> (Crisis on <span class=\"searchmatch\">Coruscant</span>) : Star Wars: The Clone Wars et La Revanche des Sith Mission",
+        "timestamp": "2018-08-07T12:03:29Z"
+      },
+      {
+        "ns": 0,
+        "title": "République galactique",
+        "pageid": 479676,
+        "size": 28915,
+        "wordcount": 3183,
+        "snippet": "ce vote. La reine Amidala, souveraine des Naboo, réussit à rejoindre <span class=\"searchmatch\">Coruscant</span> et dénonça les agissements de la Fédération du Commerce au Sénat. Le chancelier",
+        "timestamp": "2018-10-25T21:12:56Z"
+      },
+      {
+        "ns": 0,
+        "title": "Jedi",
+        "pageid": 4353215,
+        "size": 27464,
+        "wordcount": 3057,
+        "snippet": "déclencheur du premier Grand Schisme. Des batailles ont lieu sur Ossus, <span class=\"searchmatch\">Coruscant</span>, Brentaal, Chendrila, Metellos. La Grande Guerre de l'hyperespace est",
+        "timestamp": "2018-08-01T14:49:40Z"
+      }
+    ]
+  }
+}
