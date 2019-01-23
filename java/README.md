@@ -11,9 +11,6 @@ Les bases de la programmation objet (variables, conditions, boucles, fonctions) 
 
 Un mécanisme pour gérer les erreurs.
 
-### [Junit](langage/junit/README.md)
-
-Les tests unitaire en java avec junit, et la notion de test driven developpement (TDD).
 
 ###  [Polymorphisme](langage/polymorphisme/README.md)
 
@@ -30,6 +27,10 @@ Pour écrire du code plus vite, le modifier, le débugger, ... bref gagner en pr
 
 Configurer un projet (gestion des dépendances, déploiement, tests)
 
+### [Junit](tools/junit/README.md)
+
+Les tests unitaire en java avec junit, et la notion de test driven developpement (TDD).
+
 ### [Git, github](tools/git/README.md)
 
 Pour collaborer sur des projets, partager du code.
@@ -43,11 +44,11 @@ Pour concevoir des diagrammes de classes.
 
 Les frameworks = "cadre de travail" permettent de donner une structure pour des projets qui rencontrent les mêmes problématiques, par exemple des application web, ou bien des application qui ont besoin d'ajouter une couche de persistance (base de donnée).
 
-### [Hibernate](java/frameworks/hibernate/README.md)
+### [Hibernate](frameworks/hibernate/README.md)
 
 Pour gérer la persistance en base de données (entity, mapping, repository).
 
-### [Springboot](java/frameworks/springboot/README.md)
+### [Springboot](frameworks/springboot/README.md)
 
 Pour faciliter l'utilisation d'autres frameworks (comme hibernate), déployer automatiquement un serveur d'application, ...
 

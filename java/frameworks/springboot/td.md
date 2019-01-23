@@ -13,7 +13,7 @@ Un projet pour diffuser simplement une api rest sur un serveur d'application.
 
 [rest.md](2-rest.md)
 
-### 3) Spring+jdbc : so easy
+### 3) Spring+jdbc
 
 Un projet pour configurer une connexion jdbc avec une base mysql (ou autre).
 
@@ -25,4 +25,4 @@ Un projet à faire entièrement from scratch pour pratiquer sur spring.
 
 [videos.md](4-videos.md)
 
-#### [retour](README.md)
+#### [retour](../README.md)
