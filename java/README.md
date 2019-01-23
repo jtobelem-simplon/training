@@ -3,6 +3,10 @@
 
 ## 1. Le langage Java
 
+### [Installation](langage/install/README.md)
+
+La machine virtuelle java, choix d'une jre, jdk.
+
 ### [Bases](langage/base/README.md)
 
 Les bases de la programmation (variables, conditions, tableaux, boucles, fonctions) avec la syntaxe java.
@@ -47,12 +51,12 @@ Pour concevoir des diagrammes de classes.
 
 Les frameworks = "cadre de travail" permettent de donner une structure pour des projets qui rencontrent les mêmes problématiques, par exemple des application web, ou bien des application qui ont besoin d'ajouter une couche de persistance (base de donnée).
 
+### [Springboot](frameworks/springboot/README.md)
+
+Pour faciliter l'utilisation d'autres frameworks (comme spring, hibernate), déployer automatiquement un serveur d'application, ...
+
 ### [Hibernate](frameworks/hibernate/README.md)
 
 Pour gérer la persistance en base de données (entity, mapping, repository).
-
-### [Springboot](frameworks/springboot/README.md)
-
-Pour faciliter l'utilisation d'autres frameworks (comme hibernate), déployer automatiquement un serveur d'application, ...
 
 #### [retour](../README.md)

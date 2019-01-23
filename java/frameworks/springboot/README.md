@@ -16,9 +16,16 @@ and View Resolver, it makes it easy to develop web applications.
 
 > **Spring boot framework** makes the configuration of spring easy. Also provides monitoring tools.
 
+Pour simplifier cette configuration, Spring Boot propose 2 fonctionnalités principales que nous allons voir dans la suite de ce chapitre :
+
+- l'auto-configuration,
+- les starters.
+
+[Aller plus loin sur openclass room](https://openclassrooms.com/fr/courses/4668056-construisez-des-microservices/5122425-decouvrez-le-framework-spring-boot)
+
 #### b) Les 7 choses que doivent savoir un débutant
 
-[http://www.springboottutorial.com/introduction-to-spring-boot-for-beginners](http://www.springboottutorial.com/introduction-to-spring-boot-for-beginners)
+[http://www.springboottutorial.com/introduction-to-spring-boot-for-beginners]()
 
 #### c) 10 raisons de se mettre à Spring
 
@@ -30,11 +37,11 @@ and View Resolver, it makes it easy to develop web applications.
 
 #### a) Les guides
 
-[https://spring.io/guides](https://spring.io/guides)
+[https://spring.io/guides]()
 
 #### b) Documentation de référence
 
-[https://docs.spring.io/spring-boot/docs/2.1.0.RELEASE/reference/htmlsingle/](https://docs.spring.io/spring-boot/docs/2.1.0.RELEASE/reference/htmlsingle/)   
+[https://docs.spring.io/spring-boot/docs/2.1.0.RELEASE/reference/htmlsingle/]()   
 
 
 ## Mise en pratique   
