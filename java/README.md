@@ -5,12 +5,15 @@
 
 ### [Bases](langage/base/README.md)
 
-Les bases de la programmation objet (variables, conditions, boucles, fonctions) avec la syntaxe java.
+Les bases de la programmation (variables, conditions, tableaux, boucles, fonctions) avec la syntaxe java.
+
+### [Objet](langage/objet/README.md)
+
+La notion d'objet, utilisation d'objets courants de l'api (string, collections), création d'objets.
 
 ### [Exceptions](langage/exceptions/README.md)
 
 Un mécanisme pour gérer les erreurs.
-
 
 ###  [Polymorphisme](langage/polymorphisme/README.md)
 

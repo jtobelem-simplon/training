@@ -12,16 +12,16 @@ Git est un système de contrôle de version.
 Le contrôle de version est un logiciel qui aide les équipes ou les individus à gérer leur code source dans le temps. Il suit les changements dans un projet de sorte que si quelque chose se casse pendant que vous y travaillez, vous pouvez comparer la différence entre le projet actuel et une version précédente du projet. Vous pouvez même " enregistrer " une version antérieure du projet et y apporter des modifications. En outre, avec Git, vous pouvez avoir des "branches" séparées, qui sont des "versions" séparées et parallèles du projet, sur lesquelles vous pouvez travailler simultanément. Par exemple, un membre d'une équipe peut travailler sur une caractéristique en même temps qu'une autre personne (ou la même personne) travaille sur une autre caractéristique. Une fois que les fonctionnalités sont terminées, elles peuvent toutes les deux (avec un peu de chance, de manière transparente) être fusionnées dans la branche principale (appelée la branche maître).
 
 
-## QU'EST-CE QUE GITHUB ?
+##  QU'EST-CE QUE GITHUB ?
 GitHub est principalement un Hub pour les projets Git. C'est-à-dire, c'est une plate-forme qui s'interface avec Git pour stocker les projets qui utilisent Git dans le cloud. C'est utile lorsque vous avez plusieurs personnes ou ordinateurs travaillant sur le projet, car les gens peuvent facilement mettre à jour leur version du projet avec une simple commande Git. GitHub est également utile pour s'assurer que vous avez des sauvegardes de votre projet, car si votre version est supprimée, vous pouvez simplement cloner le projet entier, y compris l'historique complet du projet, depuis le cloud GitHub.
 
 Ouvrez un compte GitHub sur github.com. Les comptes payants vous permettent de rendre vos projets privés. A moins que vous ne souhaitiez démarrer un projet très privé, vous n'avez pas besoin d'un compte payant (Duh). Si quelqu'un d'autre vous invite à travailler sur son projet privé, vous n'avez pas besoin d'un compte payé pour travailler sur son projet en tant que collaborateur. Si vous êtes un étudiant ou un enseignant, vous pouvez vous inscrire à un compte payant gratuit après vous être inscrit à un compte standard.
 
-## QU'EST-CE QUE GITLAB ?
+##  QU'EST-CE QUE GITLAB ?
 
 La même chose que github.
 
-## POURQUOI UTILISER GIT ET GITHUB ?
+##  POURQUOI UTILISER GIT ET GITHUB ?
 Tout d'abord, une fois que vous commencez à utiliser Git et GitHub, vous ne cesserez jamais de l'utiliser.
 
 Avec Git et GitHub, vous pouvez facilement :
