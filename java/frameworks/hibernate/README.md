@@ -71,11 +71,36 @@ Ce type de relation n'étant pas la plus courante (car elle revient souvent à a
 
 #### One to Many
 
-
+[Cahier des charges ici](oneToMany/README.md)
 
 #### Many to Many
 
+[Cahier des charges ici](manyToMany/README.md)
+
 ## 4. Requêtes HQL
+
+Pour des requêtes un peu plus complexes, et comme l'ensemble des requêtes passent par hibernate, on peut utiliser le langage [HQL](https://docs.jboss.org/hibernate/orm/3.5/reference/fr-FR/html/queryhql.html).
+
+Pour les utiliser, nous aurons besoin de récupérer l'entityManager que l'on va placer en attribut de la classe :
+
+```java
+@PersistenceContext
+private EntityManager em;
+```
+
+```java
+public void hqlQuery(String etudiantNom) {
+
+		String hql = "FROM Etudiant E WHERE E.nom like :nom"; // the java class, not entity
+		TypedQuery<Etudiant> query = em.createQuery(hql, Etudiant.class);
+		query.setParameter("nom", "%eg%");
+		List<Etudiant> results = query.getResultList();
+
+		for (Etudiant etudiant : results) {
+			log.info(etudiant.getNom());
+		}
+	}
+```
 
 ## 5. Entities from relation, Eclipse
 
@@ -86,3 +111,5 @@ Ce type de relation n'étant pas la plus courante (car elle revient souvent à a
 ## Kahoot time
 
 (Ne suivez pas le lien, présentation seulement) https://play.kahoot.it/#/?quizId=b0328654-804b-4cde-a6d0-e5c05028cf48
+
+#### [retour](../README.md)
