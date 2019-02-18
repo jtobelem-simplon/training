@@ -20,7 +20,7 @@ La base.
 
 ### [angular](front/angular/README.md)
 
-Un framework pour le front qui utilise type script, une sur couche de js.
+Un framework pour le front qui utilise type script, une surcouche de js.
 
 
 ## 2. Backend

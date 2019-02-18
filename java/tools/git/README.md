@@ -1,10 +1,10 @@
 # Git
 
-[https://git-scm.com/]()
+[https://git-scm.com/](https://git-scm.com/)
 
-[https://github.com/]()
+[https://github.com/](https://github.com/)
 
-[https://about.gitlab.com/]()
+[https://about.gitlab.com/](https://about.gitlab.com/)
 
 ## QU'EST-CE QUE GIT ?
 Git est un système de contrôle de version.
@@ -44,6 +44,8 @@ Avec Git et GitHub, vous pouvez facilement :
 
 ## Pour aller plus loin
 [Les commandes git de base](started.pdf)
+
+[Voir une représentation visuelle de commandes git](https://git-school.github.io/visualizing-git/)
 
 [Tutoriel sur git avec codecademy](https://www.codecademy.com/learn/learn-git)
 

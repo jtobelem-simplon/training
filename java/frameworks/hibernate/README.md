@@ -1,78 +1,88 @@
-# Hibernate, encore plus de magie
+# Hibernate
 
-![magic](img/more-magic.png)
 
-## Documentation
-[The java geek](http://www.thejavageek.com/jpa-tutorials/)
-
-[Java code geeks](https://www.javacodegeeks.com/2015/02/jpa-tutorial.html#entitymanager)
+## 1. Généralités (JPA, ORM, hibernate)
 
 [Un cours en français](http://orm.bdpedia.fr/introjpa.html)
 
-[reference : API jpa d'oracle](https://docs.oracle.com/javaee/7/api/javax/persistence/package-summary.html)
+#### Rôle d'un ORM
 
-[reference : tutorial jpa d'oracle](https://docs.oracle.com/javaee/7/tutorial/partpersist.htm)
+Le but d'un ORM (Object Relation Map) est de relier des objects (java) avec des relations.
 
-## Rôle d’un système ORM
+Par exemple si on a les deux relations suivantes :
 
-> Le rôle d’un système ORM est de convertir automatiquement, à la demande, la base de données sous forme d’un graphe d’objet. L’ORM s’appuie pour cela sur une configuration associant les classes du modèle fonctionnel et le schéma de la base de donnés. L’ORM génère des requêtes SQL qui permettent de matérialiser ce graphe ou une partie de ce graphe en fonction des besoins.
+* Table films
 
-Pour bien comprendre cette notion de graphe et en quoi elle diffère de la représentation dans la base relationnelle, voici une petit échantillon de cette dernière.
+id |titre        |année|idRéalisateur
+---|---          |---  |---          
+17 |Pulp Fiction |1994 |37
+54 |Le Parrain   |1972 |64
+57 |Jackie Brown |1997 |37
 
-**Table des films**
+* Table artistes
 
-id	| titre      |	année  |idRéalisateur
------|-----------|---------|----------------
-17	|Pulp Fiction| 1994    |	37
-54	|Le Parrain	 | 1972	   | 64
-57	|Jackie Brown	| 1997	| 37
+id  |nom      |prénom   |année_naissance
+--- |---      |---      |---
+1   |Coppola	|Sofia	  |1971
+37	|Tarantino|Quentin	|1963
+64	|Coppola  |Francis	|1939
 
-**Table des artistes**
 
-id	|nom|	prénom	|année_naissance
----|----|---------|------------------
-1	|Coppola	| Sofia	|1971
-37|	Tarantino |	Quentin|	1963
-64|	Coppola	 | Francis|	1939
-
-Ce petit exemple illustre bien comment on représente une association en relationnel. C’est un mécanisme de référence par valeur (et pas par adresse), où la clé primaire d’une entité (ligne) dans une table est utilisée comme attribut (dit clé étrangère) d’une autre entité (ligne).
-
-Ici, le réalisateur d’un film est un artiste dans la table Artiste, identifié par une clé nommée id. Pour faire référence à cet artiste dans la table Film, on ajoute un attribut clé étrangère idRealisateur dont la valeur est l’identifiant de l’artiste. Notez dans l’exemple ci-dessus que cet identifiant est 37 pour Pulp Fiction et Jackie Brown, 64 pour Le parrain, avec la correspondance à une et une seule ligne dans la table Artiste.
-
-Voyons maintenant la représentation équivalente dans un langage objet en général (et donc java en particulier). Nous avons des objets, et la capacité à référencer un objet depuis un autre objet (cette fois par un système d’adressage). Par exemple, en supposant que nous avons une classe Artiste et une classe Film en java, le fait qu’un film ait un réalisateur se représente par une référence à un objet Artiste sous forme d’une propriété de la classe Film.
+On va leur faire correspondre les deux objets suivantes :
 
 ```java
-class Film {
+public class Film {
 
-  (...)
-
-  Artiste realisateur;
-
-  (...)
+	Artiste realisateur;
 }
 ```
 
-Et du côté de la classe Artiste, nous pouvons représenter les films réalisés par un artiste par un ensemble.
-
 ```java
-class Artiste {
+public class Artiste {
 
-  (...)
+	Set<Film> filmsDiriges;
 
-  Set<Film> filmsDiriges;
-
-  (...)
 }
 ```
+> On remarque une première différence importante : les relations en base de données sont bi-directionnelles, alors qu'en java on spécifie le sens. Ici, on indique explicitement un lien de Film vers Artiste, et un lien de Artiste vers Film.
 
-> **Important** : On peut noter dès maintenant qu’une différence importante entre les associations en relationnel et en java est que les premières sont bi-directionnelles. Il est toujours possible par une requête SQL (une jointure) de trouver les films réalisés par un artiste, ou le réalisateur d’un film. En java, le lien peut être représenté de chaque côté de l’association, ou des deux. Par exemple, on pourrait mettre la propriété réalisateur dans la classe Film, mais pas filmsDiriges dans la classe Artiste, ou l’inverse, ou les deux. Cette subtilité est la source de quelques options plus ou moins obscures dans les systèmes ORM, nous y reviendrons.
+#### JPA
+
+Le mapping objet/relation est un aspect important de la programmation, une spécification indique comment il doit s'opérer avec java : c'est [JPA](https://fr.wikipedia.org/wiki/Java_Persistence_API).
+
+#### Hibernate
+
+JPA est essentiellement une spécification. Il existe plusieurs implémentations de JPA, la plus connue est Hibernate.
+
+[Hibernate](https://fr.wikipedia.org/wiki/Hibernate)
+
+## 2. Configuration d'hibernate avec springboot
+
+Pour configurer hibernate, il suffit d'ajouter la dépendance spring-boot-starter-data-jpa (à votre pom.xml ou bien build.gradle). Vous aurez aussi besoin d'ajouter un connecteur spécifique pour votre bdd (mysql, postgres, ...).
+
+[Maven repository](https://mvnrepository.com/)
+
+
+## 3. Quelques exemples
+
+#### One to One
+
+Ce type de relation n'étant pas la plus courante (car elle revient souvent à avoir deux tables qui auraient pu se ramener en une seule), nous allons d'abord étudier les suivantes.
+
+#### One to Many
 
 
 
-## Mise en pratique   
+#### Many to Many
 
+## 4. Requêtes HQL
 
-[Des exos](td.md)   
+## 5. Entities from relation, Eclipse
 
+- new jpa project
+- init connexion with the good driver (test the connexion)
+- new entites from tables
 
-#### [retour](../../README.md)
+## Kahoot time
+
+(Ne suivez pas le lien, présentation seulement) https://play.kahoot.it/#/?quizId=b0328654-804b-4cde-a6d0-e5c05028cf48

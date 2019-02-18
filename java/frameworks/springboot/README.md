@@ -25,7 +25,7 @@ Pour simplifier cette configuration, Spring Boot propose 2 fonctionnalités prin
 
 #### b) Les 7 choses que doivent savoir un débutant
 
-[http://www.springboottutorial.com/introduction-to-spring-boot-for-beginners]()
+[http://www.springboottutorial.com/introduction-to-spring-boot-for-beginners](http://www.springboottutorial.com/introduction-to-spring-boot-for-beginners)
 
 #### c) 10 raisons de se mettre à Spring
 
@@ -37,11 +37,11 @@ Pour simplifier cette configuration, Spring Boot propose 2 fonctionnalités prin
 
 #### a) Les guides
 
-[https://spring.io/guides]()
+[https://spring.io/guides](https://spring.io/guides)
 
 #### b) Documentation de référence
 
-[https://docs.spring.io/spring-boot/docs/2.1.0.RELEASE/reference/htmlsingle/]()   
+[https://docs.spring.io/spring-boot/docs/2.1.0.RELEASE/reference/htmlsingle/](https://docs.spring.io/spring-boot/docs/2.1.0.RELEASE/reference/htmlsingle/)   
 
 
 ## Mise en pratique   

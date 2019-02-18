@@ -24,7 +24,7 @@ Create an empty shema named db_example in your mysql database. Check your passwo
 
 #### Model
 
-- Create a simple class Customer :
+- Create a simple class Customer in the package model :
 
 ![customer](img/customer.png)
 
@@ -63,25 +63,20 @@ public class Application implements CommandLineRunner {
     public void run(String... strings) throws Exception {
     	createTable();
     	insertValues();
-
-    	List<Customer> customers= findBySurname("Josh");
-    	for (Customer customer : customers) {
-    		log.info(customer.toString());
-    	}
-
     }
 
     public void insertValues() {
+      log.info("Insert new customers in database");
+
       // TODO create and insert customers
     }
 
     public void createTable() {
     	 log.info("Creating tables");
 
-         jdbcTemplate.execute("DROP TABLE IF EXISTS customers");
-         jdbcTemplate.execute("CREATE TABLE customers(" +
-                 "id SERIAL, first_name VARCHAR(255), last_name VARCHAR(255))");
+       // TODO create tables if not already exist
     }
+
     /**
      * @param newCusto : the Customer to be added in database
      */
@@ -95,14 +90,84 @@ public class Application implements CommandLineRunner {
 
 }
 ```
+> The class implements CommandLineRunner, and will launch a run method when the server will be started and ready
+> The application declares a jdbcTemplate with the annotation @Autowired : this jdbcTemplate will be automagically initialized by spring
 
-- in a the method insertValues(), create the customers : "John Woo","Jeff Dean","Josh Bloch and "Josh Long". Use the insertCustomer method to add them in database.
+- Use the idbcTemplate to create the table customers with the sql instruction : `CREATE TABLE customers(id SERIAL, first_name VARCHAR(255), last_name VARCHAR(255))`
+- In a the method insertValues(), create the customers : "John Woo","Jeff Dean","Josh Bloch and "Josh Long". Use the insertCustomer method to add them in database.
 
-#### Mapping
+#### Refactor the code and move all queries in same place
+
+- Create a package repository and inside a CustomerRepository class :
+
+```java
+package customers.repository;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+
+
+@Repository
+public class CustomerRepository {
+
+	@Autowired
+	JdbcTemplate jdbcTemplate;
+
+
+	public void createTable() {
+		// TODO create customers table
+	}
+
+	/**
+	 * Create 4 Customers
+	 */
+	public void insertValues() {
+	   // TODO create 4 Customer Objects, and add it in database
+	}
+
+	/**
+	 * @param newCusto : the Customer to be added in database
+	 */
+	public void insertCustomer(Customer newCusto) {
+		jdbcTemplate.update(
+				"INSERT INTO customers(first_name, last_name) VALUES (?,?)",
+				newCusto.getFirstName(),
+				newCusto.getLastName()
+				);
+	}
+
+}
+```
+
+> The class have @Repository annotation so Spring can find it when using @Autowired from an other place.
+> You can now move all queries from the Application and place it in the Repository
+> Finally you will declare your Repository in the Application as @Autowired :
+
+```java
+@Autowired
+	private CustomerRepository customerRepository;
+
+	@Override
+	public void run(String... strings) throws Exception {
+		log.info("Creating tables");
+		customerRepository.createTable();
+
+		log.info("Insert new customers in database");
+		customerRepository.insertValues();
+
+	}
+```
+
+#### Mapping into objects the result of queries
 - Create a class CustomerRowMapper :
 
 ```java
-package customers;
+package customers.repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -120,7 +185,7 @@ public class CustomerRowMapper implements RowMapper<Customer>{
 }
 ```
 
-- use it in a method findBySurname. This method is to be placed in the Application class :
+- Use it in a method findBySurname. This method is to be placed in the Repository class :
 
 ```java
 public List<Customer> findBySurname(String surname){
@@ -132,7 +197,39 @@ public List<Customer> findBySurname(String surname){
     }
 ```
 
-- test this method in the main method to print out all Customer whose surname is "Josh"
+- test this method in the run method of the Application to log all Customer whose surname is "Josh"
 
+#### Controller
+
+- Add a method findAll in the repository :
+
+```java
+public List<Customer> findAll(){
+    	 // TODO
+    }
+```
+- Create a CustomerController in a package controller with a mapping for the route /customers. Annote with @RestController :
+
+```java
+package customers.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+
+@RestController
+public class CustomerController {
+
+	@RequestMapping("/customers")
+	public List<Customer> findAll(){
+		// TODO
+	}
+}
+```
+
+#### Test it! [http://localhost:8080/customers](http://localhost:8080/customers)
 
 #### [retour](td.md)
