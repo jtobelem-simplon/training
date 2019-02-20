@@ -52,4 +52,6 @@ On peut mettre les annotations devant la classe (pour la table), les attributs o
 * définir la multiplicités du côté de l'entité qui ne possède pas la fk
 @OneToMany(mappedBy="XXX") : le nom de l'attribut de l'entité liée (celle du dessus) qui correspond à la fk
 
+> C'est dans l'annotation oneToMany que l'on établit les règles de cascade à appliquer, par exemple si l'on veut que la suppression d'un groupe entraîne la suppression des tous les étudiants qu'il possède, on mettra cascade=CascadeTpe.REMOVE.
+
 #### [retour](../README.md)

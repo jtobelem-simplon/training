@@ -77,7 +77,25 @@ Ce type de relation n'étant pas la plus courante (car elle revient souvent à a
 
 [Cahier des charges ici](manyToMany/README.md)
 
-## 4. Requêtes HQL
+## 4. Requêtes personnalisées
+
+On peut ajouter de nombreuses requêtes personnalisées dans les repository, elles seront automatiquement implémentées par hibernate. Il suffit d'ajouter la signature dans l'interface du repository.
+
+```java
+public interface EtudiantRepository extends JpaRepository<Etudiant, Integer> {
+
+	List<Etudiant> findByNom(String nom);
+	List<Etudiant> findByNomContainingIgnoreCase(String nom);
+	List<Etudiant> findTop3ByOrderByNomAsc();
+	List<Etudiant> findAllByOrderByNomDesc();
+}
+```
+> On remarque que le byXXX fait référence à un attribut de l'entité.
+> Voici la liste des mot-clé qui peuvent être utilisés pour générer des requêtes personnalisées : [repository-query-keywords](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repository-query-keywords)
+
+Plus de détail ici : [repositories.query-methods.query-creation](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#repositories.query-methods.query-creation)
+
+## 5. Requêtes HQL
 
 Pour des requêtes un peu plus complexes, et comme l'ensemble des requêtes passent par hibernate, on peut utiliser le langage [HQL](https://docs.jboss.org/hibernate/orm/3.5/reference/fr-FR/html/queryhql.html).
 
@@ -89,20 +107,21 @@ private EntityManager em;
 ```
 
 ```java
-public void hqlQuery(String etudiantNom) {
+public void hqlQuery() {
+		String nomLike = "eg";
 
 		String hql = "FROM Etudiant E WHERE E.nom like :nom"; // the java class, not entity
 		TypedQuery<Etudiant> query = em.createQuery(hql, Etudiant.class);
-		query.setParameter("nom", "%eg%");
+		query.setParameter("nom", '%' + nomLike + '%');
 		List<Etudiant> results = query.getResultList();
 
 		for (Etudiant etudiant : results) {
-			log.info(etudiant.getNom());
+			System.out.println(etudiant.getNom());
 		}
 	}
 ```
 
-## 5. Entities from relation, Eclipse
+## 6. Entities from relation, Eclipse
 
 - new jpa project
 - init connexion with the good driver (test the connexion)
