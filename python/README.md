@@ -50,7 +50,7 @@ Pour clusteriser des traitements.
 
 ### [Django](frameworks/django/README.md)
 
-Pour faire des applications web.
+Pour faire des applications web : [https://docs.djangoproject.com/en/dev/intro/tutorial01/](https://docs.djangoproject.com/en/dev/intro/tutorial01/)
 
 ### [Flask+SQLAlchemy](frameworks/flask/README.md)
 

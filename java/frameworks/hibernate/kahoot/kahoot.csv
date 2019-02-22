@@ -4,7 +4,7 @@ Dans un projet Maven, dans quel répertoire seront placées les sources java ?;s
 Dans un code java, comment appelle-t-on des instructions qui commencent avec un @ ?;annotation;metacode;anecdote;introspection;30;1
 Laquelle des ces annotations désigne un test junit ?;@Test;@Anchor;@Before;@Setup;30;1
 La classe principale d'un projet springboot est annoté ?;@SpringBootApplication;@Controller;@Service;@Repository;30;1
-Dans comment appelle-t-on ce qui permet d'importer facilement un ensemble de dépendances ?;spring-boot-starter;injection of dependance;pom.xml;build.gradle;30;1
+Dans springboot, que faut-il utiliser pour importer facilement un ensemble de dépendances ?;spring-boot-starter;injection of dependance;pom.xml;build.gradle;30;1
 Dans springboot, comment appelle-t-on le mécanisme associé à l'annotation @Autowired ?;inversion of control;introspection;polymorphisme;injection of dependance;30;1,4
 Quel est l'intrus ?;django;hibernate;spring;junit;30;1
 Hibernate est?;un fichier jar utilisé pour l'intégration de JPA;un framework de mapping objet-relationnel (ORM);un framework de test java;un framework de persistence pour java, python et c++;30;2

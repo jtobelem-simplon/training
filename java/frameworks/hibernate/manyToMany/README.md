@@ -20,17 +20,17 @@ Pour réaliser ceci, vous allez utiliser le framework hibernate pour la persiste
 
 
 Vous pourrez suivre les étapes suivantes :
-[] création du modèle
-[] ajout des annotations de persistance
-[] création des repository
-[] création de l'application principale
-[] configuration de la base de donnée
+- [ ] création du modèle
+- [ ] ajout des annotations de persistance
+- [ ] création des repository
+- [ ] création de l'application principale
+- [ ] configuration de la base de donnée
 
 On teste que cette première partie se lance sans erreur ...
 
-[] création d'un service qui implémente les trois fonctions de l'api
-[] test depuis l'application en commandLineRunner
-[] création du controller rest pour diffuser l'api
+- [ ] création d'un service qui implémente les trois fonctions de l'api
+- [ ] test depuis l'application en commandLineRunner
+- [ ] création du controller rest pour diffuser l'api
 
 
 #### Les annotations du modèle
