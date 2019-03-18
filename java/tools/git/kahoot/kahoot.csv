@@ -1,0 +1,16 @@
+Qu'est-ce qu'un contrôle de version?;Un moyen de conserver l'historique d'un code source;Un moyen d'organiser et de contrôler les révisions;Un outil pour héberger des données;Un bon moyen de faire collaborer plusieurs collaborateur sur un projet;30;1,2,4
+Pourquoi est-ce que c'est important?;Pour pouvoir revenir à d'anciennes versions;Pour pouvoir fusionner plusieurs versions de dev;Pour pouvoir montrer aux autres que tu es un dieu du code;Pour pouvoir restaurer tes données en cas de [*];30;1,2,4
+Git et Github c'est la même chose?;Vrai;Faux;;;30;2
+C'est quoi git?;Un outil de version de contrôle;La même chose que Github;Un framework de webdeveloppement;;30;1
+C'est quoi github?;Un service pour héberger des repository sous contrôle de version;La même chose que git;Un framework de webdeveloppement;;30;1
+Qui est ce type?;Linus Torvalds;Robert Noyce;Charles Babbage;Mark Zuckerberg;30;1
+Qu'a-t-il fait?;Il a crée le noyau linux et git;Il a inventé le circuit intégré;Il a envoyé la première requête HTTP;Il a crée le réseau social "MySpace";30;1
+Qu'est-ce qu'un repository?;Un emplacement de stockage pour un projet sous contrôle de version;Un dossier pour les fichiers 3D;Un dossier d'installation pour des logiciels linux;;30;1
+Un fichier staged, c'est ...;Un fichier qui sera inclus dans le prochain commit;Un fichier désactivé pour débogage;Un fichier qui sera suivi dans toutes les versions;;30;1
+Selectionne une interface graphique pour git;SourceTree;Github desktop;Python;Windows powershell;30;1,2
+Lequels de ces fichiers sont inappropriés pour un contrôle de version sur github?;Les gros fichiers de film;Le code source;Les scripts de film;Les fichiers 3D;30;1
+Que fait l'instruction git commit?;Elle place les fichiers staged à la suite du dernier commit;Elle déplace les fichiers staged vers le repo github;;;30;1$
+Qu'est-ce qu'une branche?;Une copie d'un objet sous contrôle de version;Une fonctionnalité spécifique à github;;;30;1
+Quelles branches classiques peut-on retrouver dans un projet sous contôle de version?;Avoir une branche de déploiement stable et une branche d'expérimentation;Avoir des branches séparées pour chaque nouvelle fonctionnalité;Avoir des branches pour corriger des bugs;;30;1,2,3
+Quel peut être un nom typique de branche dans le workflow github?;Master;Release;Developement;Code;30;1,2,3
+Github est local ou remote?;Local;Remote;;;30;2

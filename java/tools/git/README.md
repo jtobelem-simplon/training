@@ -1,58 +1,140 @@
-# Git
+# Git, github
 
-[https://git-scm.com/](https://git-scm.com/)
+## Généralités
 
-[https://github.com/](https://github.com/)
+Une bonne introduction des commandes de base, des généralités sur git et github :
+[https://guides.github.com/introduction/git-handbook/(https://guides.github.com/introduction/git-handbook/)]
 
-[https://about.gitlab.com/](https://about.gitlab.com/)
+## Quelques cas d'utilisation en ligne de commande et avec visualizing-git
 
-## QU'EST-CE QUE GIT ?
-Git est un système de contrôle de version.
+#### Exercice 1 : commandes de base en local
 
-Le contrôle de version est un logiciel qui aide les équipes ou les individus à gérer leur code source dans le temps. Il suit les changements dans un projet de sorte que si quelque chose se casse pendant que vous y travaillez, vous pouvez comparer la différence entre le projet actuel et une version précédente du projet. Vous pouvez même " enregistrer " une version antérieure du projet et y apporter des modifications. En outre, avec Git, vous pouvez avoir des "branches" séparées, qui sont des "versions" séparées et parallèles du projet, sur lesquelles vous pouvez travailler simultanément. Par exemple, un membre d'une équipe peut travailler sur une caractéristique en même temps qu'une autre personne (ou la même personne) travaille sur une autre caractéristique. Une fois que les fonctionnalités sont terminées, elles peuvent toutes les deux (avec un peu de chance, de manière transparente) être fusionnées dans la branche principale (appelée la branche maître).
+  1) Créer un repository (en local)
+
+```bash
+cd desktop
+git init demo
+cd demo
+ls -al
+```
+
+*remarque : `ls -al` est la commande linux pour lister le contenu du répertoire. Pour windows, on peut utiliser `dir`*
+
+> `git init` va créer un répertoire nommé demo. Ce répertoire contient un répertoire caché nommé .git et qui contiendra l'historique local des versions.
+
+2) Créer un fichier
+
+![img](add-commit.png)
+
+```bash
+touch readme.md
+git status
+git add readme.md
+git status
+git commit -m 'ajoute le fichier readme'
+git log
+```
+> Créer le fichier avec la commande linux touch, cela ne modifie rien au git status, il faut utiliser git add.
+> `git status` indique l'ensemble des différences avec HEAD
+> `git log` liste l'ensemble des commits réalisés
+
+3) Réaliser d'autres commits
+
+Ouvrir le fichier readme.md et le modifier en ajoutant le titre du projet, puis sauver.
+
+```bash
+git status
+git add readme.md
+git status
+git commit -m 'ajout du titre du projet'
+git status
+```
+> Il faut ajouter les fichiers impactés à chaque modification avant de commiter.
+> Chaque commit devrait être unitaire et impacter un changement précis.
 
 
-##  QU'EST-CE QUE GITHUB ?
-GitHub est principalement un Hub pour les projets Git. C'est-à-dire, c'est une plate-forme qui s'interface avec Git pour stocker les projets qui utilisent Git dans le cloud. C'est utile lorsque vous avez plusieurs personnes ou ordinateurs travaillant sur le projet, car les gens peuvent facilement mettre à jour leur version du projet avec une simple commande Git. GitHub est également utile pour s'assurer que vous avez des sauvegardes de votre projet, car si votre version est supprimée, vous pouvez simplement cloner le projet entier, y compris l'historique complet du projet, depuis le cloud GitHub.
+#### Exercice 2 : placer un repo sur github
 
-Ouvrez un compte GitHub sur github.com. Les comptes payants vous permettent de rendre vos projets privés. A moins que vous ne souhaitiez démarrer un projet très privé, vous n'avez pas besoin d'un compte payant (Duh). Si quelqu'un d'autre vous invite à travailler sur son projet privé, vous n'avez pas besoin d'un compte payé pour travailler sur son projet en tant que collaborateur. Si vous êtes un étudiant ou un enseignant, vous pouvez vous inscrire à un compte payant gratuit après vous être inscrit à un compte standard.
+Nous allons partir du repo local précédent et souhaitons que les commits soient enregistrés sur une machine distante. Celle-ci sera vue comme un `remote`.
 
-##  QU'EST-CE QUE GITLAB ?
-
-La même chose que github.
-
-##  POURQUOI UTILISER GIT ET GITHUB ?
-Tout d'abord, une fois que vous commencez à utiliser Git et GitHub, vous ne cesserez jamais de l'utiliser.
-
-Avec Git et GitHub, vous pouvez facilement :
-
-- Gardez une trace de l'historique de votre projet, afin de pouvoir revenir à une version antérieure si la version actuelle échoue, ou si vous avez besoin d'utiliser ou de comparer le code d'une version antérieure.
-- Tout l'historique du projet est stocké dans votre projet, dans un dossier nommé.git Il est très difficile de perdre du code avec Git.
-- Gérer différentes versions. Vous pouvez même baliser différentes versions avec des balises comme "v1, v2.0.01b, b4, etc." et ensuite vous pouvez facilement extraire les versions balisées. Ou bien vous pouvez faire des "releases" sur GitHub et ensuite facilement créer des liens vers d'autres releases depuis votre site web/n'importe où.
-- Collaborez avec les autres. La collaboration, ou du moins les bases des fonctionnalités de collaboration, est facile avec Git et GitHub.
-- Gardez des branches différentes. Avec différentes branches, vous pouvez, par exemple : avoir différentes branches où vous travaillez sur différentes fonctionnalités ; avoir une branche pour, disons, la version Python du projet et une branche pour, disons, la version Ruby du projet, en avoir une pour la documentation, et une pour le site web...
-- Reproduisez facilement n'importe quelle version du projet dans une branche différente, apportez des modifications, puis fusionnez-les à nouveau dans la branche d'origine.
-- Git est extrêmement rapide
-- Gardez des sauvegardes de vos projets sur GitHub - bien que ce soit un avantage d'utiliser GitHub, ne commencez pas à penser à Git comme un système de sauvegarde, car ce n'est pas ce que c'est.
-- Gardez une trace des problèmes et des bogues de votre projet sur GitHub.
-- Publiez ou stockez votre code source sur l'une des principales plateformes de développement logiciel au monde : GitHub.
-- Ayez un endroit en ligne où vous conservez tout votre code, et tout son historique, ses collaborateurs, sa documentation, etc.
-- Git et GitHub est l'un des systèmes de contrôle de version les plus populaires.
-
-... Des tonnes d'autres choses.
+1) Créer un repo sur github du même nom que celui de l'exercice 1
 
 
-## Pour aller plus loin
-[Les commandes git de base](started.pdf)
+2) On va ajouter dans notre repo local une référence au repo distant. On l'appelera origin.
 
-[Voir une représentation visuelle de commandes git](https://git-school.github.io/visualizing-git/)
+![img](add-origin.png)
 
-[Tutoriel sur git avec codecademy](https://www.codecademy.com/learn/learn-git)
+```bash
+git remote add origin (repo location)
+git remote -v
+tree .git/refs
+```
+> L'emplacement du repo est qqch comme : `https://github.com/jtobelem/demo.git`.
+> On peut consulter la liste des remote associés à notre repo avec -v.
 
-[Tutoriel interactif sur git](https://learngitbranching.js.org/)
+```bash
+tree .git/refs
+```
+> Sous linux, on peut visualiser les remote avec la commande tree
 
-[Des ressources pour github](https://try.github.io/)
+3) Pusher une première modification sur le repo distant
 
-[Un cours structuré et complet sur git et github](https://git-scm.com/book/fr/v2)
+```bash
+git push -u origin master
+```
+> -u est un raccourci pour --set-upstream, donc les prochaines fois, on pourra juste faire git push
 
-#### [retour](../../README.md)
+4) Modifier le readme sur l'interface distante (donc sur github). Récupérer les modifications distantes non encore présente en local.
+
+```bash
+git fetch
+git merge
+```
+> fetch permet récupérer les modifications distantes. On peut ensuite les intégrer avec la commande merge.
+> fetch + merge = pull
+
+5) Modifier à nouveau le readme sur l'interface distante en ajoutant 'remote' sur la dernière ligne ET en local en ajoutant 'local' sur la dernière ligne. Tentez un pull.. Réglez les conflits.
+
+
+#### Exercice 3 : branches (avec visualizing)
+
+Les branches sont des pointeurs sur des commits.
+
+1) Utiliser [https://git-school.github.io/visualizing-git/](https://git-school.github.io/visualizing-git/) pour réaliser plusieurs commits successifs
+
+
+2) Créer une nouvelle branche :
+
+```bash
+git branch feature
+git checkout feature
+```
+> `git branch` pour créer la branche et checkout pour la selectionner. On peut directement faire `git checkout -b` feature.
+
+3) Réaliser de nouveaux commits dans cette branche. Et pendant qu'on devloppe cette nouvelle feature, le master continue d'évoluer. Selectionner master et faire quelques commit dedans.
+
+4) Réaliser des essais avec la catégorie upstream changes.
+
+![img](visualize.png)
+
+## Github flow
+
+Le workflow standard sur GitHub, cad la séquence d'actions à réaliser pour modifier un projet :   
+[https://guides.github.com/introduction/flow/](https://guides.github.com/introduction/flow/)
+
+## Documenter vos projets
+
+Documenter votre projet avec markdown :   
+[https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
+
+Quelles informations placer dans un readme, comment le structurer. Mettre en place un wiki  :   
+[https://guides.github.com/features/wikis/](https://guides.github.com/features/wikis/)
+
+Une fonctionnalité super-nice! pour transformer un repo en site html   
+[https://guides.github.com/features/pages/](https://guides.github.com/features/pages/)
+
+## Kahoot time
+Ne pas cliquer! (lien de présentation)      
+https://play.kahoot.it/#/?quizId=a2d4bc5a-8def-4fd0-89be-c51c10ada340
+
+#### [retour](../README.md)
