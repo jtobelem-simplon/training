@@ -3,7 +3,7 @@
 ## Généralités
 
 Une bonne introduction des commandes de base, des généralités sur git et github :
-[https://guides.github.com/introduction/git-handbook/(https://guides.github.com/introduction/git-handbook/)]
+[https://guides.github.com/introduction/git-handbook/](https://guides.github.com/introduction/git-handbook/)
 
 ## Quelques cas d'utilisation en ligne de commande et avec visualizing-git
 
