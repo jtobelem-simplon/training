@@ -52,6 +52,21 @@ git status
 > Il faut ajouter les fichiers impactés à chaque modification avant de commiter.
 > Chaque commit devrait être unitaire et impacter un changement précis.
 
+4) Revenir à un état antérieur
+
+Dans le git log, regarder les 4 premiers caractères du commit auquel vous souhaitez accéder.
+
+![img](git-log.png)
+
+Entrer la commande suivante :
+
+```bash
+git reset --hard c60c
+```
+
+> Cette commande va effacer toutes les modifications faites après le commit dont le numéro commence par c60c.   
+> Plus de détail ici : [stackoverflow -> how to revert a git repository to a previous commit]( https://stackoverflow.com/questions/4114095/how-to-revert-a-git-repository-to-a-previous-commit)   
+> Et aussi : [stackoverflow -> how to resolve merge conflicts](https://stackoverflow.com/questions/161813/how-to-resolve-merge-conflicts-in-git/163659#163659)
 
 #### Exercice 2 : placer un repo sur github
 
@@ -87,14 +102,22 @@ git push -u origin master
 4) Modifier le readme sur l'interface distante (donc sur github). Récupérer les modifications distantes non encore présente en local.
 
 ```bash
+git diff master origin/master
 git fetch
 git merge
 ```
-> fetch permet récupérer les modifications distantes. On peut ensuite les intégrer avec la commande merge.
+
+> La commande **git diff** permet de comparer la branche locale master avec la branche master du remote origin   
+> **fetch** permet récupérer les modifications distantes. On peut ensuite les intégrer avec la commande merge.
 > fetch + merge = pull
 
 5) Modifier à nouveau le readme sur l'interface distante en ajoutant 'remote' sur la dernière ligne ET en local en ajoutant 'local' sur la dernière ligne. Tentez un pull.. Réglez les conflits.
 
+```bash
+git config --global core.editor "atom --wait"
+```
+
+> C'est assez pratique de configurer un editeur à utiliser avec git en cas de conflit. On peut le faire avec la commande précédente.
 
 #### Exercice 3 : branches (avec visualizing)
 
