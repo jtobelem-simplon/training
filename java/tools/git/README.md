@@ -52,6 +52,14 @@ git status
 > Il faut ajouter les fichiers impactés à chaque modification avant de commiter.
 > Chaque commit devrait être unitaire et impacter un changement précis.
 
+Ou encore
+```bash
+git commit -a -m 'ajout du titre du projet'
+```
+
+> L'option -a permet d'ajouter au stage tous les fichiers qui ont déjà été ajoutés précédemment et qui ont été modifiés ou supprimés, mais pas les fichiers qui n'ont jamais été ajoutés.
+
+
 4) Revenir à un état antérieur
 
 Dans le git log, regarder les 4 premiers caractères du commit auquel vous souhaitez accéder.
