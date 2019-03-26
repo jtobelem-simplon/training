@@ -74,7 +74,6 @@ git reset --hard c60c
 
 > Cette commande va effacer toutes les modifications faites après le commit dont le numéro commence par c60c.   
 > Plus de détail ici : [stackoverflow -> how to revert a git repository to a previous commit]( https://stackoverflow.com/questions/4114095/how-to-revert-a-git-repository-to-a-previous-commit)   
-> Et aussi : [stackoverflow -> how to resolve merge conflicts](https://stackoverflow.com/questions/161813/how-to-resolve-merge-conflicts-in-git/163659#163659)
 
 #### Exercice 2 : placer un repo sur github
 
@@ -126,6 +125,7 @@ git config --global core.editor "atom --wait"
 ```
 
 > C'est assez pratique de configurer un editeur à utiliser avec git en cas de conflit. On peut le faire avec la commande précédente.
+> Plus de détails sur la résolution de conflits : [stackoverflow -> how to resolve merge conflicts](https://stackoverflow.com/questions/161813/how-to-resolve-merge-conflicts-in-git/163659#163659)
 
 #### Exercice 3 : branches (avec visualizing)
 
