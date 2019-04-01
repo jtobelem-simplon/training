@@ -38,7 +38,7 @@ Pour écrire du code plus vite, le modifier, le débugger, ... bref gagner en pr
 
 Configurer un projet (gestion des dépendances, déploiement, tests)
 
-### [Junit](tools/junit/README.md)
+### [Junit](tools/tests/README.md)
 
 Les tests unitaire en java avec junit, et la notion de test driven developpement (TDD).
 
