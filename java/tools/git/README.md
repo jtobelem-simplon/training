@@ -5,6 +5,8 @@
 Une bonne introduction des commandes de base, des généralités sur git et github :
 [https://guides.github.com/introduction/git-handbook/](https://guides.github.com/introduction/git-handbook/)
 
+Git est le logiciel de versionning le plus utilisé par les developpeurs. L'autre grand nom est svn : [stackoverflow -> why is git better than subversion](https://stackoverflow.com/questions/871/why-is-git-better-than-subversion).
+
 ## Quelques cas d'utilisation en ligne de commande et avec visualizing-git
 
 #### Exercice 1 : commandes de base en local
@@ -109,8 +111,8 @@ git push -u origin master
 4) Modifier le readme sur l'interface distante (donc sur github). Récupérer les modifications distantes non encore présente en local.
 
 ```bash
-git diff master origin/master
 git fetch
+git diff master origin/master
 git merge
 ```
 
