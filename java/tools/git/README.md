@@ -155,6 +155,8 @@ git checkout feature
 Le workflow standard sur GitHub, cad la séquence d'actions à réaliser pour modifier un projet :   
 [https://guides.github.com/introduction/flow/](https://guides.github.com/introduction/flow/)
 
+Un autre exemple complet sur [git-scm.com](https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Branches-et-fusions%C2%A0%3A-les-bases).
+
 ## Documenter vos projets
 
 Documenter votre projet avec markdown :   

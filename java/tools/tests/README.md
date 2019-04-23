@@ -32,7 +32,7 @@ Une meilleure pratique est d'implémenter au fur et à mesure des tests unitaire
 
 #### Tester le backend (junit)
 
-- [ ] tester les endpoints de l'application (donc le contrôleur)
+- [ ] tester les [endpoints](controller.md) de l'application (donc le contrôleur)
 - [ ] tester les méthodes des services
 - [ ] tester les repository
 - [ ] tester que l'application démarre
