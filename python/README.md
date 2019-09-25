@@ -6,9 +6,15 @@ Nous allons travailler avec python3 (dernière version 3.7.4) : [doc de référe
 
 [les cours](course/python.md)
 
+
 ## Exercices
 
 [les exercices](exercice/python.md)
+
+## Break
+
+N'allez pas visiter ce lien svp (c'est un lien de présentation)
+https://create.kahoot.it/share/python/cfa32a28-1a01-47f1-9bca-c85640bceeb8
 
 ## Les fondamentaux de l'algo
 

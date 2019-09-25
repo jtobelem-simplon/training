@@ -91,6 +91,8 @@ Mon formateur <formateur> est fan de <langage>, surtout depuis la version <versi
 
 Et afficher cette variable.
 
+Pour aller plus loin, [défi sur hackerRank](https://www.hackerrank.com/challenges/python-arithmetic-operators/problem)
+
 ## Etape 3 : Conditionnons notre code
 
 ```python
@@ -108,22 +110,33 @@ heure = 10
 
 > Remarque : un bon programmeur (donc un peu flemmard), aura certainement préféré utiliser le **else** pour toutes les heures invalides plutôt que pour soirée, car cela permet de ne pas écrire la condition compliquée avec le **or**.
 
+Pour aller plus loin, [défi sur hackerRank](https://www.hackerrank.com/challenges/py-if-else/problem)
+
 ## Etape 4 : Créons des fonctions
 
 - Créer une fonction qui renvoie l'aire d'un triangle en prenant en paramètres base et hauteur.
 - Créer une fonction qui renvoie le volume d'une sphère en prenant en paramètre son rayon.
 - Créer une fonction qui renvoie un message donnant l'IMC d'une personne. Elle prendra en paramètre le prénom de la personne, son poids en kg et sa taille en cm.
 
+Pour aller plus loin, [défi sur hackerRank](https://www.hackerrank.com/challenges/write-a-function/problem)
+
+
 ## Etape 5 : Listes
 
 Créer une liste qui contient tous les prénoms du groupe. Trier cette liste. Afficher tous les prénoms qui ont un indice impair.
 Créer deux sous-listes groupe1 et groupe2 contenant chacun la moitié du groupe.
+
+Pour aller plus loin, [défi sur hackerRank](https://www.hackerrank.com/challenges/python-lists/problem)
+
 
 ## Etape 6 : Boucles
 
 Parcourir la liste précédente. Pour chaque prénom, afficher la longueur du prénom avec la fonction **len**.
 Ajouter une variable **maximum** au début du programme qui vaut 0 au début. Pour chaque prénom, **si** la longueur du prénom est supérieur au maximum, remplacer maximum par cette valeur.
 Afficher le prénom le plus long à la fin avec un message : "le prénom le plus long est <prénom>, il possède <nbLettres> lettres"
+
+Pour aller plus loin, [défi sur hackerRank](https://www.hackerrank.com/challenges/python-loops/problem)
+
 
 
 ## Etape 7 : Entrées / Sorties
