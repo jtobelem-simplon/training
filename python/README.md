@@ -1,59 +1,52 @@
-# Programmation Python
+# Introduction au langage python, CyberSecu-LP1
 
+Nous allons travailler avec python3 (dernière version 3.7.4) : [doc de référence](https://docs.python.org/fr/3.7/)
 
-## 1. Le langage Python
+## Cours
 
-### [Installation](langage/install/README.md)
+[les cours](course/python.md)
 
-Quelle version installer, ajouter des modules avec pip, les installations préconfigurées.
+## Exercices
 
-### [Bases](langage/base/README.md)
+[les exercices](exercice/python.md)
 
-Les bases de la programmation (variables, conditions, tableaux, boucles, fonctions) avec la syntaxe python.
+## Les fondamentaux de l'algo
 
-### [Objet](langage/objet/README.md)
+Pour pratiquer plus sur les boucles en codant avec un langage de bloc (à la souris, pour apprendre la programmation) :
 
-La notion d'objet en python. Quelques fondamentaux de l'api (string, collections, ...).
+1. [Créez un compte sur code.org en suivant le lien suivant](https://studio.code.org/join/WTCFSG)
+2. Faites la leçon 2 : le labyrinthe
+3. Faites la leçon 5 : l'artiste
+4. Faites la leçon 15 : l'artiste4 (pour utiliser des fonctions)
 
-### [Exceptions](langage/exceptions/README.md)
+Tester ces algos avec python :
 
-Un mécanisme pour gérer les erreurs.
+1. Installez le module tk pour python3 :
+```shell
+sudo apt install python3-tk
+```
+2. Testez le code suivant pour vérifier que python3-tk fonctionne :
+```python
+from turtle import *
+color('red', 'yellow')
+begin_fill()
+while True:
+    forward(200)
+    left(170)
+    if abs(pos()) < 1:
+        break
+end_fill()
+done()
+```
+3. Essayez de convertir en python3 les algos de la leçon 5.
 
-###  [Modules](langage/modules/README.md)
-
-Des modules supplémentaires couramment utilisés dans la data : pandas, numpy
-
-
-## 2. Outils associés
-
-### [IDE](tools/ide/README.md)
-
-VS code, pycharm.
-
-### [notebook](tools/notebook/README.md)
-
-Diffuser son code avec jupyter notebook.
-
-### [Git, github](tools/git/README.md)
-
-Pour collaborer sur des projets, partager du code.
-
-
-
-## 3. Frameworks associés
-
-Les frameworks = "cadre de travail" permettent de donner une structure pour des projets qui rencontrent les mêmes problématiques, par exemple des application web, ou bien des application qui ont besoin d'ajouter une couche de persistance (base de donnée).
-
-### [Spark](frameworks/spark/README.md)
-
-Pour clusteriser des traitements.
-
-### [Django](frameworks/django/README.md)
-
-Pour faire des applications web : [https://docs.djangoproject.com/en/dev/intro/tutorial01/](https://docs.djangoproject.com/en/dev/intro/tutorial01/)
-
-### [Flask+SQLAlchemy](frameworks/flask/README.md)
-
-Pour faire des applications web (plus simple que django).
-
-#### [retour](../README.md)
+solution pour le 6 de la leçon 5 :
+```python
+for i in range(3) :
+    forward(100)
+    right(120)
+for i in range(4) :
+    left(90)
+    forward(100)
+done()
+```
