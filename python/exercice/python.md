@@ -19,7 +19,7 @@ A faire : déclarer des variables permettant de vous décrire avec :
 mystery1 = 8 + 6
 mystery2 = 8 - 6
 ```
-Afficher avec **print** la variable qui est égale à -2.
+Afficher avec **print** la variable qui est égale à 2.
 
 ### Ex2
 ```python
