@@ -46,7 +46,7 @@ nbBoites
 ```
 
 2. Dans un jeu de 32 cartes (7,8,9,.., roi, as pour pique, cœur, carreau, trèfle), on décide d'associer à chaque carte un numéro.
-Le numéro de la carte est obtenu en multipliant le numéro de la couleur (1,2,3 ou 4) par le numéro de la figure (1,2,3 ... 8).
+Le numéro de la carte est obtenu en multipliant le numéro de la couleur (0,1,2 ou 3) par le numéro de la figure (1,2,3 ... 8).
 
 Exemple :
 le 9 de pique a pour numéro = 3*1 = 3 (3e carte de la couleur 1)
