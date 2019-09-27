@@ -123,17 +123,18 @@ Pour aller plus loin, [défi sur hackerRank](https://www.hackerrank.com/challeng
 
 ## Etape 5 : Listes
 
-Créer une liste qui contient tous les prénoms du groupe. Trier cette liste. Afficher tous les prénoms qui ont un indice impair.
-Créer deux sous-listes groupe1 et groupe2 contenant chacun la moitié du groupe.
+1. Créer une liste qui contient tous les prénoms du groupe.
+2. Trier cette liste. Afficher tous les prénoms qui ont un indice impair.
+3. Créer deux sous-listes groupe1 et groupe2 contenant chacun la moitié du groupe.
 
 Pour aller plus loin, [défi sur hackerRank](https://www.hackerrank.com/challenges/python-lists/problem)
 
 
 ## Etape 6 : Boucles
 
-Parcourir la liste précédente. Pour chaque prénom, afficher la longueur du prénom avec la fonction **len**.
-Ajouter une variable **maximum** au début du programme qui vaut 0 au début. Pour chaque prénom, **si** la longueur du prénom est supérieur au maximum, remplacer maximum par cette valeur.
-Afficher le prénom le plus long à la fin avec un message : "le prénom le plus long est <prénom>, il possède <nbLettres> lettres"
+1. Parcourir la liste précédente. Pour chaque prénom, afficher la longueur du prénom avec la fonction **len**.
+2. Ajouter une variable **maximum** au début du programme qui vaut 0 au début. Pour chaque prénom, **si** la longueur du prénom est supérieur au maximum, remplacer maximum par cette valeur.
+3. Afficher le prénom le plus long à la fin avec un message : "le prénom le plus long est <prénom>, il possède <nbLettres> lettres"
 
 Pour aller plus loin, [défi sur hackerRank](https://www.hackerrank.com/challenges/python-loops/problem)
 
