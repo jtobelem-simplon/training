@@ -6,9 +6,9 @@ Dans le fichier connexion.log, on a enregistré les ip qui ont été accédées 
 
 A vous de jouer pour retrouver le/les hackers (blackhat) infiltrés.
 
-1. Parcourez le fichier pour trouver la liste de tous les utilisateurs qui se sont connectés, enregistrez cette liste dans un fichier [**utilisateurs.txt**](utilisateurs.txt)
+1. Parcourez le fichier pour trouver la liste de tous les utilisateurs qui se sont connectés, enregistrez cette liste dans un fichier [**utilisateurs.txt**](./utilisateurs.txt)
 2. On soupçonne qu'une personne se connecte en dehors des heures d'ouverture des bureaux (8h-19h), peut-être dpuis un poste distant. Utilisez un script pour retrouver l'identifiant de cette personne, et afficher l'ip à la laquelle elle se connectait
-3. Le service de sécurité informatique a fournit une liste d'ip dangereuse : [**warning.txt**](warning.txt). Lisez ce fichier pour construire une liste contenant toutes les ip dangereuses. A l'aide de cette liste, relevez dans le fichier connexion.log tous les utilisateurs qui se sont connectés sur une de ces ip, on produira un fichier **suspect.txt** avec une ligne par utilisateur et le nombre de fois qu'il s'est connecté à une ip interdite :
+3. Le service de sécurité informatique a fournit une liste d'ip dangereuse : [**warning.txt**](./warning.txt). Lisez ce fichier pour construire une liste contenant toutes les ip dangereuses. A l'aide de cette liste, relevez dans le fichier connexion.log tous les utilisateurs qui se sont connectés sur une de ces ip, on produira un fichier **suspect.txt** avec une ligne par utilisateur et le nombre de fois qu'il s'est connecté à une ip interdite :
 ```
 josselin;17
 nicolas;27
