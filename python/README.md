@@ -11,6 +11,10 @@ Nous allons travailler avec python3 (dernière version 3.7.4) : [doc de référe
 
 [les exercices](exercice/python.md)
 
+## Projet
+
+[le projet](projet/projet.md)
+
 ## Break
 
 N'allez pas visiter ce lien svp (c'est un lien de présentation)
