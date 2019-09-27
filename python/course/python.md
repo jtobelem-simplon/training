@@ -469,8 +469,36 @@ Ou aussi avec des nombres, pour répéter 100 fois une action (utile!).
 for i in range(100) :
   print(str(i)+" Je ne photocopierai plus mes fesses")
 ```
-
 [ref](https://fr.wikipedia.org/wiki/Liste_des_phrases_au_tableau_noir_des_Simpson)
+
+
+Ou encore si je veux remplir une liste au fur et à mesure avec des entrée utilisateur :
+```python
+n = int(input("combien de personnes? "))
+
+personnes = [] # au début, on crée une liste vide
+
+for i in range(n) : # le nombre n est le nombre de répétitions à faire
+  nom = input("entrez le nom de la personne n°"+str(i))
+  personnes.append(nom) # la fonction append permet d'ajouter à la fin de la liste
+
+for i in range(len(personnes)) :
+  print("bonjour "+personnes[i]) # personne[i] permet d'accéder à la personne de la liste d'indice i
+```
+
+> Pour la 2e boucle du code précédent, parfois on a besoin de l'indice, mais si on ne l'utilise pas, la syntaxe **for ... in** est plus pratique :
+```python
+n = int(input("combien de personnes? "))
+
+personnes = [] # au début, on crée une liste vide
+
+for i in range(n) : # le nombre n est le nombre de répétitions à faire
+  nom = input("entrez le nom de la personne n°"+str(i))
+  personnes.append(nom)
+
+for nom in personnes :
+  print("bonjour "+nom)
+```
 
 Pour plus de détails : [La documentation officielle de Python](https://docs.python.org/fr/3/tutorial/controlflow.html#for-statements)
 
