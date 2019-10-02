@@ -45,17 +45,18 @@ nbOeufsTotal = 145
 nbBoites
 ```
 
-2. Dans un jeu de 32 cartes (7,8,9,.., roi, as pour pique, cœur, carreau, trèfle), on décide d'associer à chaque carte un numéro.
-Le numéro de la carte est obtenu en multipliant le numéro de la couleur (0,1,2 ou 3) par le numéro de la figure (1,2,3 ... 8).
+2. Dans un jeu de 32 cartes (7, 8, 9, ..., roi, as pour les couleurs pique, cœur, carreau, trèfle), on décide d'associer à chaque carte un numéro.
+Le numéro de la carte est obtenu en multipliant le numéro de la couleur (0,1,2 ou 3) par le numéro de la figure (0,1,2,3 ... 7).
 
 Exemple :
-le 9 de pique a pour numéro = 3 fois 1 = 3 (3e carte de la couleur 1)
-la dame de cœur a pour numéro = 6 fois 2 = 12
+le 9 de pique a pour numéro = 2 + 0*8 = 2 (carte n°2 de la couleur 0)
+la dame de cœur a pour numéro = 5 + 1*8 = 12 (carte n°5 de la couleur 1)
 
 ```python
-numeroCarteMystere = 28
+numero_carte_mystere = 28
 ```
-Créer une variable **numeroCouleur** et **numeroFigure** à retrouver à partir du numéro de la carte mystère. Vous pouvez vérifier que votre méthode fonctionne en retrouvant la couleur de la carte n°3 (9 de pique) ou de la carte n°12 (dame de cœur).
+
+Créer une variable **numero_couleur** et **numero_figure** à retrouver à partir du numéro de la carte mystère. Vous pouvez vérifier que votre méthode fonctionne en retrouvant la couleur de la carte n°2 (9 de pique) ou de la carte n°13 (dame de cœur).
 
 ### Ex5 : inférieur, supérieur
 ```python
@@ -142,8 +143,7 @@ Pour aller plus loin, [défi sur hackerRank](https://www.hackerrank.com/challeng
 
 ## Etape 7 : Entrées / Sorties
 
-- Créer un programme qui demande à l'utilisateur de se présenter : prénom, nom et age. Utilisez la console pour afficher un message d'accueil personnalisé du type "Bonjour _Jules Grand_ tu as _30 ans_ c'est bien ça ?"
-- Créer un programme qui fera la même chose tout en écrivant les informations reçues dans un fichier texte. Le fichier devra être nommé _prenom-nom.txt_
+- Créer un programme qui lit tous les prenoms dans un fichier promo.txt (à créer avec un notepad) et les place dans une liste. Puis tire un élément aléatoire dans cette liste (en utilisant la fonction choice du module random) et écrit ce nom dans un nouveau fichier winner.txt
 - Créer un programme qui va lire le fichier [films-2018.txt](../resource/films-2018.txt) et indiquer combien il y a de films sortis en 2018.
 
 **Bonus**
